@@ -1,0 +1,56 @@
+{
+  "name": "ve_",
+  "description": "🐠 pickled with zero-runtime and variants, I left Stitches(@stitchesjs) and came to VE(@vanilla-extract-css). I Love VE ❤️",
+  "author": "safethecode(iam@sonjim.in)",
+  "version": "0.2.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "prettier:fix": "prettier **/*.ts **/*.tsx --write",
+    "pre-commit": "lint-staged",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.15.3",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@vanilla-extract/next-plugin": "^2.4.2",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn prettier:fix",
+      "yarn lint:fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
