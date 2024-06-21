@@ -1,15 +1,15 @@
 import { constructMetadata } from '@/utils/next';
-import { InterFontStyle } from '@/styles/globalFontsStyle';
+import { Pretendard } from '@/styles/globalFontsStyle';
 
 import Providers from './providers';
 
 import '@/styles/globalStyle.css';
+import '@/styles/tailwindcss/global.css';
 
 export const metadata = constructMetadata({
-  title: 'VE_',
-  description: 'I Love VE ❤️',
-  keywords: ['VE', 'I Love VE'],
-  domain: 'localhost:3000',
+  title: 'MagicSpell',
+  description: '🦄 Experience rapid development with tailwindcss.',
+  domain: 'https://example.com',
 });
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={InterFontStyle.variable}>
+      <body className={Pretendard.className}>
         <Providers>{children}</Providers>
       </body>
     </html>

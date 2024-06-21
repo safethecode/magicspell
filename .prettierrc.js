@@ -1,16 +1,22 @@
 module.exports = {
+  plugins: [
+    '@trivago/prettier-plugin-sort-imports',
+    'prettier-plugin-tailwindcss',
+    'prettier-plugin-classnames',
+  ],
+  endingPosition: 'absolute-with-indent',
   trailingComma: 'all',
   printWidth: 80,
   useTabs: false,
   tabWidth: 2,
   importOrder: [
-    "^(next/(.*)$)|^(next$)",
-    "^(react/(.*)$)|^(react$)",
-    "<THIRD_PARTY_MODULES>",
-    "^@/components/(.*)$|^components/(.*)$",
-    "^#/lib/(.*)$",
-    "^@/styles/(.*)$",
-    "^[./]",
+    '^(next/(.*)$)|^(next$)',
+    '^(react/(.*)$)|^(react$)',
+    '<THIRD_PARTY_MODULES>',
+    '^@/components/(.*)$|^components/(.*)$',
+    '^#/lib/(.*)$',
+    '^@/styles/(.*)$',
+    '^[./]',
   ],
   importOrderSeparation: false,
   importOrderSortSpecifiers: true,
@@ -19,5 +25,5 @@ module.exports = {
   semi: true,
   arrowParens: 'always',
   endOfLine: 'auto',
-  jsxSingleQuote: false, 
-}
+  jsxSingleQuote: false,
+};
